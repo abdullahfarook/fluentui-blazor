@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.FluentUI.AspNetCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.FluentUI.AspNetCore.Components.Emoji", "FluentUI.Emojis\Microsoft.FluentUI.AspNetCore.Components.Emoji.csproj", "{9F88D6E5-6D3B-4EBA-8009-2D496A3F918C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.FluentUI.AspNetCore.Components", "..\Core\Microsoft.FluentUI.AspNetCore.Components.csproj", "{2673F235-474F-475F-A921-D9BD8CFAB32E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9F88D6E5-6D3B-4EBA-8009-2D496A3F918C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F88D6E5-6D3B-4EBA-8009-2D496A3F918C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F88D6E5-6D3B-4EBA-8009-2D496A3F918C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2673F235-474F-475F-A921-D9BD8CFAB32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2673F235-474F-475F-A921-D9BD8CFAB32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2673F235-474F-475F-A921-D9BD8CFAB32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2673F235-474F-475F-A921-D9BD8CFAB32E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
