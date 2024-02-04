@@ -303,6 +303,7 @@ public abstract partial class ListComponentBase<TOption> : FluentComponentBase, 
         {
             if (this is not FluentListbox<TOption> &&
                 this is not FluentSelect<TOption> &&
+                this is not IListComponent &&
                 this is not FluentAutocomplete<TOption>)
             {
                 throw new ArgumentException("Only FluentSelect, FluentListbox and FluentAutocomplete components support multi-selection mode. ", nameof(Multiple));
