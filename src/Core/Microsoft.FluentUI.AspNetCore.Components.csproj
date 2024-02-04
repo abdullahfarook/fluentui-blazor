@@ -9,7 +9,8 @@
     <Description>A set of Blazor components wrapping Microsoft’s official Fluent UI Web Components. They implement the latest state of the Fluent design language, are built on FAST and work in every major browser.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <!-- <VersionSuffix>dev-14</VersionSuffix> -->
     <SignAssembly>true</SignAssembly>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -23,7 +24,7 @@
     <SuppressTrimAnalysisWarnings>true</SuppressTrimAnalysisWarnings>
     <IsPackable>true</IsPackable>
 
-    <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
+    <PackageOutputPath>C:\repos\fluentui-blazor\artifacts</PackageOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -53,7 +54,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <InternalsVisibleTo Include="BlazorHotchocolate" />
+    <InternalsVisibleTo Include="Metaphor.FluentUI.Components" />
+    <InternalsVisibleTo Include="Playground" />
+    <InternalsVisibleTo Include="Components" />
     <InternalsVisibleTo Include="Red.Portal.Components" />
   </ItemGroup>
   
