@@ -18,8 +18,8 @@
 		<Description>A set of icons wrapping Microsoft’s official Fluent UI Icon library.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
-
-		<PackageOutputPath>..\..\..\artifacts</PackageOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageOutputPath>C:\repos\packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -31,8 +31,12 @@
 	  <Folder Include="Icons\" />
 	</ItemGroup>
 
+<!--	<ItemGroup>-->
+<!--	  <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" />-->
+<!--	</ItemGroup>-->
+
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" />
+	  <ProjectReference Include="..\..\Core\Microsoft.FluentUI.AspNetCore.Components.csproj" />
 	</ItemGroup>
 
 </Project>

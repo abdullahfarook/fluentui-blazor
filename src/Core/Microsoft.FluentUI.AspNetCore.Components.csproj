@@ -22,8 +22,10 @@
     <IsTrimmable>true</IsTrimmable>
     <SuppressTrimAnalysisWarnings>true</SuppressTrimAnalysisWarnings>
     <IsPackable>true</IsPackable>
-    
-    <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
+
+    <!--<PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>-->
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>C:\repos\packages</PackageOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -43,7 +45,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="Components" />
+    <InternalsVisibleTo Include="Metaphor.Web.Components" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,7 +59,7 @@
 
   <!-- Code Analysis -->
   <ItemGroup>
-    <!-- 
+    <!--
     <PackageReference Include="StyleCop.Analyzers" VersionOverride="1.2.0-beta.556">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -68,7 +70,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  
+
   <ItemGroup>
 	  <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
@@ -77,7 +79,7 @@
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
   </ItemGroup>
 
-  <ItemGroup>	  
+  <ItemGroup>
     <ProjectReference Include="..\Core.Assets\Microsoft.FluentUI.AspNetCore.Components.Assets.esproj" PrivateAssets="All" />
     <ProjectReference Include="..\Extensions\DesignToken.Generator\Microsoft.FluentUI.AspNetCore.Components.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
